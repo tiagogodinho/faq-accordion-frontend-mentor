@@ -126,10 +126,13 @@ details {
     gap: var(--content-spacing);
     justify-content: space-between;
     align-items: center;
-    padding: 1.375rem 0;
-    font-size: var(--heading-size-2);
-    font-weight: var(--fw-bold);
-    color: var(--clr-primary-800);
+
+    h2 {
+      padding: 1.375rem 0;
+      font-size: var(--heading-size-2);
+      font-weight: var(--fw-bold);
+      color: var(--clr-primary-800);
+    }
   }
 
   p {
