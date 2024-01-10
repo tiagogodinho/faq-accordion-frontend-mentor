@@ -10,6 +10,9 @@
   --fw-regular: 400;
   --fw-semi-bold: 600;
   --fw-bold: 700;
+  --heading-size-1: 2rem;
+  --heading-size-2: 1rem;
+  --paragraph-size: 0.875rem;
 }
 
 /* CSS reset */
@@ -44,12 +47,13 @@ body {
 .faq {
   --content-padding: 1.5rem;
   --content-spacing: 1.5rem;
+  --border-radius: 8px;
 
   box-sizing: border-box;
   max-width: 600px;
   padding: var(--content-padding);
   margin: var(--content-spacing) auto;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   background-color: var(--clr-neutral-100);
 }
 
@@ -60,7 +64,7 @@ body {
 }
 
 .faq__title {
-  font-size: 2rem;
+  font-size: var(--heading-size-1);
   color: var(--clr-primary-800);
 }
 
@@ -95,12 +99,13 @@ details {
     justify-content: space-between;
     align-items: center;
     padding: 1.375rem 0;
+    font-size: var(--heading-size-2);
     font-weight: var(--fw-bold);
     color: var(--clr-primary-800);
   }
 
   p {
-    font-size: 14px;
+    font-size: var(--paragraph-size);
     line-height: 1.5;
     color: var(--clr-primary-400);
     margin-bottom: 20px;
