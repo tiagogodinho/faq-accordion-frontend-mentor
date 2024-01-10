@@ -10,9 +10,16 @@
   --fw-regular: 400;
   --fw-semi-bold: 600;
   --fw-bold: 700;
+
   --heading-size-1: 2rem;
   --heading-size-2: 1rem;
   --paragraph-size: 0.875rem;
+
+  @media (min-width: 600px) {
+    --heading-size-1: 3.5rem;
+    --heading-size-2: 1.125rem;
+    --paragraph-size: 1rem;
+  }
 }
 
 /* CSS reset */
@@ -42,6 +49,10 @@ body {
   background-image: url(./assets/images/background-pattern-mobile.svg);
   background-repeat: repeat-x;
   font-family: var(--ff-base);
+
+  @media (min-width: 600px) {
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+  }
 }
 
 .faq {
@@ -55,12 +66,29 @@ body {
   margin: var(--content-spacing) auto;
   border-radius: var(--border-radius);
   background-color: var(--clr-neutral-100);
+
+  @media (min-width: 600px) {
+    --content-padding: 2.5rem;
+    --border-radius: 16px;
+  }
 }
 
 .faq__header {
   display: flex;
   gap: var(--content-spacing);
   margin-bottom: 0.125rem;
+
+  img {
+    width: 24px;
+  }
+
+  @media (min-width: 600px) {
+    margin-bottom: 0.5rem;
+
+    img {
+      width: auto;
+    }
+  }
 }
 
 .faq__title {
